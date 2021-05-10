@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahgz.mapper.BorrowMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ahgz.entity.Borrow">
+        <id column="id" property="id" />
+        <result column="matnr" property="matnr" />
+        <result column="part_name" property="partName" />
+        <result column="part_specification" property="partSpecification" />
+        <result column="category" property="category" />
+        <result column="figure_number" property="figureNumber" />
+        <result column="number" property="number" />
+        <result column="material" property="material" />
+        <result column="borrow_name" property="borrowName" />
+        <result column="borrow_time" property="borrowTime" />
+        <result column="created_name" property="createdName" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_name" property="updatedName" />
+        <result column="updated_time" property="updatedTime" />
+        <result column="supplier" property="supplier" />
+        <result column="mark" property="mark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, matnr, part_name, part_specification, category, figure_number, number, material, borrow_name, borrow_time, created_name, created_time, updated_name, updated_time, supplier, mark
+    </sql>
+
+</mapper>

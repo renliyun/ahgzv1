@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahgz.mapper.AddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ahgz.entity.Address">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="telephone" property="telephone" />
+        <result column="address" property="address" />
+        <result column="sex" property="sex" />
+        <result column="mark" property="mark" />
+        <result column="company" property="company" />
+        <result column="created_name" property="createdName" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_name" property="updatedName" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, telephone, address, sex, mark, company, created_name, created_time, updated_name, updated_time
+    </sql>
+
+</mapper>
